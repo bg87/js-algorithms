@@ -15,13 +15,21 @@ Stack.prototype.pop = function() {
 }
 
 Stack.prototype.size = function() {
-    return this.storage.length;
+    var length = 0;
+
+    for(var i = 0; i < this.storage.length; i++) {
+        if(this.storage[i] === '/') {
+            length += 1;
+        }
+    }
+    return length;
 }
 
 var myMenu = new Stack();
 myMenu.push('pizza');
 myMenu.push('steak');
+
 console.log(myMenu.storage);
-console.log(myMenu.pop());
-console.log(myMenu.storage);
+
+console.log(myMenu.size())
 
