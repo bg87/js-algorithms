@@ -22,16 +22,14 @@ Queue.prototype.dequeue = function() {
 }
 
 Queue.prototype.peek = function() {
-    // => oldest element added collection
-    // Similiar to dequeue, but do not remove element from collection
+    return this.storage[0];
 }
 
-Queue.prototype.count = function() {
-    // => number of elements in queue
+Queue.prototype.capacity = function() {
+    return this.count;
 }
 
 var q = new Queue(5);
 console.log(q.enqueue('hi'));
 console.log(q);
-console.log(q.dequeue());
-console.log(q);
+console.log(q.capacity());
