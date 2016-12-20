@@ -50,8 +50,8 @@ Stack1.prototype.push = function(val) {
 }
 
 Stack1.prototype.pop = function() {
-    var value = this.storage[this.count - 1];
-    delete this.storage[value];
+    var value = this.storage[--this.count];
+    delete this.storage[this.count];
     if(this.count < 0) {
         this.count = 0;
     }
@@ -72,4 +72,4 @@ console.log(stack.push('hello'));
 console.log(stack.push('yes'));
 console.log(stack.push('dude'));
 console.log(stack.pop());
-//console.log(stack);
+console.log(stack);
