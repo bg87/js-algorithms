@@ -59,11 +59,11 @@ Stack1.prototype.pop = function() {
 }
 
 Stack1.prototype.peek = function() {
-    // return most recent added value
+    return this.storage[this.count - 1];
 }
 
 Stack1.prototype.count = function() {
-    // return number of elements in stack
+    return this.count;
 }
 
 var stack = new Stack1(5);
@@ -73,3 +73,4 @@ console.log(stack.push('yes'));
 console.log(stack.push('dude'));
 console.log(stack.pop());
 console.log(stack);
+console.log(stack.peek());
