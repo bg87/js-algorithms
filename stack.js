@@ -26,10 +26,6 @@ Stack.prototype.size = function() {
     return length;
 }
 
-// var myMenu = new Stack();
-// myMenu.push('pizza');
-// myMenu.push('steak');
-
 
 // With an object as storage
 
@@ -68,9 +64,4 @@ Stack1.prototype.count = function() {
 
 var stack = new Stack1(5);
 
-console.log(stack.push('hello'));
-console.log(stack.push('yes'));
-console.log(stack.push('dude'));
-console.log(stack.pop());
-console.log(stack);
-console.log(stack.peek());
+
