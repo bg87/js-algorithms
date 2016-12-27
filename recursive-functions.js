@@ -40,6 +40,20 @@ function countRecursive(start, end) {
 // console.log(countRecursive(5, 10));
 
 
+function multiplier(arr, num) {
+    var newArr = [];
+    function multiply() {
+        if(arr.length > 0) {
+            newArr.push(arr.shift() * num);
+            multiply();
+        }
+    }
+    multiply();
+    return newArr;
+}
+
+console.log(multiplier([1,2,3], 2));
+
 function reverse(arr) {
    var reversedArr = [];
    function addItems() {
@@ -52,7 +66,7 @@ function reverse(arr) {
    return reversedArr;
 }
 
-console.log(reverse([1,2,3]));
+// console.log(reverse([1,2,3]));
 
 function fibonacci(n) {
     if(n <= 2) return 1;
