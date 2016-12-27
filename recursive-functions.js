@@ -52,13 +52,25 @@ function multiplier(arr, num) {
     return newArr;
 }
 
-console.log(multiplier([1,2,3], 2));
+// console.log(multiplier([1,2,3], 2));
+
+function moarMultiplier(arr, num) {
+    if(arr.length === 0) {
+        return arr;
+    }
+    var last = arr.pop()
+    moarMultiplier(arr, num);
+    arr.push(last * num);
+    return arr;
+}
+
+console.log(moarMultiplier([1,2,3], 2));
 
 function reverse(arr) {
    var reversedArr = [];
    function addItems() {
        if(arr.length > 0){
-          reversedArr.push(arr.pop());
+          reversedArr.push(arr.pop()); 
           addItems;
        }
    }
