@@ -64,7 +64,7 @@ function moarMultiplier(arr, num) {
     return arr;
 }
 
-console.log(moarMultiplier([1,2,3], 2));
+// console.log(moarMultiplier([1,2,3], 2));
 
 function reverse(arr) {
    var reversedArr = [];

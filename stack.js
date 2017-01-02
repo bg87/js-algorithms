@@ -62,6 +62,6 @@ Stack1.prototype.count = function() {
     return this.count;
 }
 
-var stack = new Stack1(5);
+// var stack = new Stack1(5);
 
 
