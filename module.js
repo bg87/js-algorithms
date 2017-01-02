@@ -1,10 +1,10 @@
 var foo = (function() {
-  var private = function(msg) {
+  var _private = function(msg) {
     return msg;
   }
 
   var public = function() {
-    console.log(private("Hello"));
+    console.log(_private("Hello"));
   }
   
   return {

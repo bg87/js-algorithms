@@ -1,4 +1,5 @@
 # Data structures and Algorithms
 
 This repo is a group of exercises and examples from 
-the data structures and algorithms course on www.frontendmasters.com
+the data structures and algorithms course on www.frontendmasters.com and some
+other random javascript notes and patterns.
