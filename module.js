@@ -4,12 +4,12 @@ var foo = (function() {
   }
 
   var public = function() {
-            console.log(private("Hello"));
-        }
+    console.log(private("Hello"));
+  }
   
-   return {
-        hi: public
-   }
+  return {
+    hi: public
+  }
 }());
 
 foo.hi();
